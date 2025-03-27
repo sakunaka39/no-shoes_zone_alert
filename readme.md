@@ -1,6 +1,6 @@
 # Introduction
 We have developed a shoe detection system using image recognition. This system determines whether a person passing in front of it is wearing shoes by analyzing their feet. If shoes are detected, the system issues an alert with sound and light.  
-![image](img/introduction.gif)
+![image](img/introduction.gif)  
 To enable image recognition, we created an original dataset consisting of images of feet wearing shoes, socks, and bare feet, along with exceptional cases where feet are not present in the image. We trained a ResNet18 model for four-class classification. Additionally, we used a 2D LiDAR to detect when a person passes in front of the camera, triggering image capture for inference. A speaker and an LED were employed to notify the person passing through based on the inference results. All programs controlling these devices and image inference were implemented using ROS2.
 
 # Table of contents
@@ -77,7 +77,7 @@ export LD_PRELOAD=/lib/aarch64-linux-gnu/libgomp.so.1
 ```
 
 # System overview
-![system](img/architecture.png)
+![system](img/architecture.png)  
 The system consists of five nodes:  
 
 1. The "LiDAR driver node" continuously acquires sensor data from the LiDAR and passes it to the next "passage detection node."
